@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="M_A_Studee_Buddee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPB-vu-kNZ">
+                                <rect key="frame" x="20" y="71" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="gCR-7u-OQ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sM3-h8-fYn">
+                                <rect key="frame" x="294" y="146" width="100" height="65"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="W6R-RC-tGC"/>
+                                    <constraint firstAttribute="width" constant="100" id="zpP-d3-Uic"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iiv-JX-8vu"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="in4-Ta-cCC">
+                                <rect key="frame" x="20" y="146" width="100" height="65"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="TV6-wo-19V"/>
+                                    <constraint firstAttribute="width" constant="100" id="wUX-k4-FwR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRw-e2-wcf"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RDS-hi-bVS">
+                                <rect key="frame" x="0.0" y="354" width="414" height="444"/>
+                            </pickerView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-gU-VR2" customClass="WKYTPlayerView">
+                                <rect key="frame" x="35" y="246" width="344" height="193.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZPg-gU-VR2" secondAttribute="height" multiplier="16:9" id="Fi3-zi-1sN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48747670728476278" green="0.80000000000000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="RDS-hi-bVS" firstAttribute="top" secondItem="sM3-h8-fYn" secondAttribute="bottom" constant="20" id="23j-bb-ehT"/>
+                            <constraint firstItem="ZPg-gU-VR2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2yN-Yu-K1h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sM3-h8-fYn" secondAttribute="trailing" constant="20" id="6DE-bn-LLy"/>
+                            <constraint firstItem="sPB-vu-kNZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DAN-HV-TMe"/>
+                            <constraint firstItem="in4-Ta-cCC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fgw-og-RAx"/>
+                            <constraint firstItem="in4-Ta-cCC" firstAttribute="top" secondItem="sPB-vu-kNZ" secondAttribute="bottom" constant="30" id="MFa-ny-xXc"/>
+                            <constraint firstItem="ZPg-gU-VR2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="OzS-Mx-Sif"/>
+                            <constraint firstItem="ZPg-gU-VR2" firstAttribute="top" secondItem="sM3-h8-fYn" secondAttribute="bottom" constant="35" id="Pbk-fc-F7O"/>
+                            <constraint firstItem="RDS-hi-bVS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Rvv-1h-pwK"/>
+                            <constraint firstItem="sM3-h8-fYn" firstAttribute="top" secondItem="sPB-vu-kNZ" secondAttribute="bottom" constant="30" id="TWY-va-GDo"/>
+                            <constraint firstItem="sPB-vu-kNZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="bkc-ST-iZz"/>
+                            <constraint firstItem="RDS-hi-bVS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eFL-rt-r6s"/>
+                            <constraint firstItem="sPB-vu-kNZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fbx-Ny-wdz"/>
+                            <constraint firstItem="RDS-hi-bVS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uLL-cp-cER"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="in4-Ta-cCC" id="sbR-gt-IfW"/>
+                        <outlet property="nextButton" destination="sM3-h8-fYn" id="0fO-IV-SFn"/>
+                        <outlet property="picker" destination="RDS-hi-bVS" id="HKg-uE-h97"/>
+                        <outlet property="titleLabel" destination="sPB-vu-kNZ" id="OY6-ZD-lKI"/>
+                        <outlet property="videoYT" destination="ZPg-gU-VR2" id="SQ8-9N-e6l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+</document>

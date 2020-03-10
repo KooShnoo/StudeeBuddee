@@ -1,0 +1,6 @@
+framework module Pods_M_A_Studee_Buddee {
+  umbrella header "Pods-M-A Studee Buddee-umbrella.h"
+
+  export *
+  module * { export * }
+}
